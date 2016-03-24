@@ -13,11 +13,10 @@
 <li><a href="#sec-1-2-4">1.2.4. identity</a></li>
 <li><a href="#sec-1-2-5">1.2.5. peer discovery</a></li>
 <li><a href="#sec-1-2-6">1.2.6. swarm / topology</a></li>
-<li><a href="#sec-1-2-7">1.2.7. streams</a></li>
-<li><a href="#sec-1-2-8">1.2.8. content routing</a></li>
-<li><a href="#sec-1-2-9">1.2.9. p2p data structures</a></li>
-<li><a href="#sec-1-2-10">1.2.10. protocol</a></li>
-<li><a href="#sec-1-2-11">1.2.11. awesome p2p modules</a></li>
+<li><a href="#sec-1-2-7">1.2.7. content routing</a></li>
+<li><a href="#sec-1-2-8">1.2.8. p2p data structures</a></li>
+<li><a href="#sec-1-2-9">1.2.9. protocol</a></li>
+<li><a href="#sec-1-2-10">1.2.10. awesome p2p modules</a></li>
 </ul>
 </li>
 <li><a href="#sec-1-3">1.3. Outline</a>
@@ -25,8 +24,7 @@
 <li><a href="#sec-1-3-1">1.3.1. introduction</a></li>
 <li><a href="#sec-1-3-2">1.3.2. what is p2p / why p2p</a></li>
 <li><a href="#sec-1-3-3">1.3.3. why node/js</a></li>
-<li><a href="#sec-1-3-4">1.3.4. basics</a></li>
-<li><a href="#sec-1-3-5">1.3.5. &#x2026;</a></li>
+<li><a href="#sec-1-3-4">1.3.4. </a></li>
 </ul>
 </li>
 </ul>
@@ -39,9 +37,15 @@
 
 ## Inspiration<a id="sec-1-1" name="sec-1-1"></a>
 
+-   <https://github.com/ipfs/specs/tree/master/libp2p>
 -   <https://github.com/mafintosh/p2p-workshop>
 -   <https://github.com/substack/stream-handbook>
--   <https://github.com/ipfs/specs/tree/master/libp2p>
+-   <https://ipfs.io>
+-   <https://github.com/dominictarr/>
+-   <https://github.com/diasdavid/>
+-   <https://github.com/mafintosh/>
+-   <https://github.com/jbenet/>
+-   <https://github.com/substack/>
 
 ## Topics<a id="sec-1-2" name="sec-1-2"></a>
 
@@ -50,6 +54,8 @@
 to bridge the gap between where p2p modules in node are today and the big abstractions that libp2p/ipfs are bringing forward
 
 ### CAP theorum<a id="sec-1-2-2" name="sec-1-2-2"></a>
+
+<https://en.wikipedia.org/wiki/CAP_theorem>
 
 ### p2p roles<a id="sec-1-2-3" name="sec-1-2-3"></a>
 
@@ -82,7 +88,8 @@ given a key, find peers
 
 ### swarm / topology<a id="sec-1-2-6" name="sec-1-2-6"></a>
 
-the topology of peers in the network
+-   the topology of peers in the network
+-   <http://blog.daviddias.me/2014/12/20/webrtc-ring>
 
 1.  structured
 
@@ -91,11 +98,7 @@ the topology of peers in the network
     signalhub
     fully-connected-topology
 
-### streams<a id="sec-1-2-7" name="sec-1-2-7"></a>
-
-the ultimate transport-agnostic abstraction
-
-### content routing<a id="sec-1-2-8" name="sec-1-2-8"></a>
+### content routing<a id="sec-1-2-7" name="sec-1-2-7"></a>
 
 given a message, figure out which peers to route it to
 
@@ -107,11 +110,14 @@ given a message, figure out which peers to route it to
         
         2.  hyperlog / ssb (anti-entropy)
 
-### p2p data structures<a id="sec-1-2-9" name="sec-1-2-9"></a>
+### p2p data structures<a id="sec-1-2-8" name="sec-1-2-8"></a>
 
 data structures well suited to an unreliable network with untrusted peers
 
 1.  crdts
+
+    -   <https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type>
+    -   <https://github.com/pfraze/crdt_notes>
 
 2.  merkle dags
 
@@ -122,12 +128,20 @@ data structures well suited to an unreliable network with untrusted peers
 3.  append-only logs
 
     1.  hyperlog
+    
+    2.  secure-scuttlebutt
+    
+        <https://scuttlebot.io/more/protocols/secure-scuttlebutt.html>
 
-### protocol<a id="sec-1-2-10" name="sec-1-2-10"></a>
+### protocol<a id="sec-1-2-9" name="sec-1-2-9"></a>
 
 what messages the peers of the network agree to exchange
 
-### awesome p2p modules<a id="sec-1-2-11" name="sec-1-2-11"></a>
+1.  streams
+
+    the ultimate transport-agnostic abstraction
+
+### awesome p2p modules<a id="sec-1-2-10" name="sec-1-2-10"></a>
 
 -   signalhub (peer discovery)
 -   hyperlog (identity, data structure, protocol)
@@ -146,6 +160,4 @@ what messages the peers of the network agree to exchange
 
 ### why node/js<a id="sec-1-3-3" name="sec-1-3-3"></a>
 
-### basics<a id="sec-1-3-4" name="sec-1-3-4"></a>
-
-### &#x2026;<a id="sec-1-3-5" name="sec-1-3-5"></a>
+### <a id="sec-1-3-4" name="sec-1-3-4"></a>

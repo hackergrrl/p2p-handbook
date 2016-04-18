@@ -18,6 +18,35 @@ This handbook's goal is to prepare you to use the excellent ecosystem of p2p
 modules available on npm today, and to develop your own p2p modules and
 applications on top.
 
+## Table of Contents
+
+  - [Status: Living Document](#status-living-document)
+  - [THE HANDBOOK](#the-handbook)
+     - [introduction](#introduction)
+     - [why you should use p2p](#why-you-should-use-p2p)
+     - [why node &amp; javascript](#why-node-javascript)
+     - [what superpowers does p2p grant?](#what-superpowers-does-p2p-grant)
+     - [CAP theorum](#cap-theorum)
+     - [p2p &quot;layers&quot; (roles)](#p2p-layers-roles)
+     - [identity](#identity)
+     - [discovery](#discovery)
+        - [bittorrent dht](#bittorrent-dht)
+        - [tracker / signal server](#tracker-signal-server)
+        - [multicast dns](#multicast-dns)
+        - [static bootstrap list](#static-bootstrap-list)
+        - [dns](#dns)
+     - [peer routing](#peer-routing)
+     - [swarm / topology](#swarm-topology)
+     - [content routing](#content-routing)
+     - [p2p data structures](#p2p-data-structures)
+        - [other handy not-strictly-p2p modules](#other-handy-not-strictly-p2p-modules)
+     - [protocol](#protocol)
+     - [awesome p2p modules](#awesome-p2p-modules)
+     - [glueing p2p modules together to make apps](#glueing-p2p-modules-together-to-make-apps)
+  - [Inspiration](#inspiration)
+
+---
+
 ### introduction
 
 This is the handbook I wish that I had when I started delving down the
@@ -242,4 +271,5 @@ TODO: sort these into their respective sections? or have tiny per-module bits?
 - <https://github.com/mafintosh/>
 - <https://github.com/jbenet/>
 - <https://github.com/substack/>
+
 

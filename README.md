@@ -259,6 +259,9 @@ TODO: sort these into their respective sections? or have tiny per-module bits?
 1. p2p picture sharing service (walk through glueing together modules from the
    roles to do this)
 
+## Further Reading
+
+- http://the-paper-trail.org/blog/distributed-systems-theory-for-the-distributed-systems-engineer/
 
 ## Inspiration
 

@@ -77,19 +77,27 @@ It's possible to "cheat" and get all three: _eventual consistency_
 
 ### p2p "layers" (roles)
 
-Whereas the OSI(?) stack breaks networks into N layers (N varies between 4 and 7
-depending on who you talk to), it's beneficial to think of P2P in terms of
-_roles_:
+Whereas the OSI model breaks networks into 7 layers, and the TCP/IP model does that into 4, it's beneficial to think of P2P in terms of _roles_:
 
-(TODO: build ASCII table of role layers -- CLI tool for this?)
-
-- applications
-- protocols & data structures
-- content routing
-- swarm topology
-- peer routing
-- discovery
-- identity
+```
++=============================+
+|            roles            |
++=============================+
+| applications                |
++-----------------------------+
+| protocols & data structures |
++-----------------------------+
+| content routing             |
++-----------------------------+
+| swarm topology              |
++-----------------------------+
+| peer routing                |
++-----------------------------+
+| discovery                   |
++-----------------------------+
+| identity                    |
++-----------------------------+
+```
 
 ### Identity
 
